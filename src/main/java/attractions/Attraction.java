@@ -1,6 +1,9 @@
 package attractions;
 
-public abstract class Attraction {
+import behaviours.ISites;
+import behaviours.IReviewed;
+
+public abstract class Attraction implements IReviewed, ISites {
     private String name;
     private int rating;
     private int visitCount;
